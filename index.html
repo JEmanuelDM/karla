@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Cumpleaños Pame <3</title>
+    <title>Feliz Cumpleaños Karla♥</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-<link rel="shortcut icon" href="pastel.ico">
+    <link rel="shortcut icon" href="corazon.png">
 
 </head>
 <!--  
  
+
   CSS Blossoming Flowers at Magical Night.
   I've taken some inspiration by Yup Nguyen's Artwork: https://dribbble.com/shots/11096994-Virtual-Garden.
   Made with Pure CSS & ♥
 -->
 
-<body class="not-loaded">
+<body id="reproducirAudio" class="not-loaded">
+
     <div class="night"></div>
-    <div class="flowers">
+    
+    <div  class="flowers">
+      <audio id="miAudio" autoplay loop>
+        <source src="ca.mp3" type="audio/mp3">
+        Tu navegador no soporta HTML5 audio.
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('miAudio');
+            var reproducirDiv = document.getElementById('reproducirAudio');
+
+            reproducirDiv.addEventListener('click', function() {
+                audio.play();
+            });
+        });
+    </script>
+        <div style="position: relative;">
+            <h1 style="color: aliceblue; ">😼Feliz Cumpleaños Karla, te quiero 😺</h1>
+          </div>
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
           <div class="flower__leaf flower__leaf--1"></div>
